@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+    <title>Media Query</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html"> Hedy Lamarr </a></li>
+                <li><a href="topologia.html">Topologia </a></li>
+                <li><a href="wifi.html"> WIFI </a></li>
+                <li><a href="comutador.html"> Comutador </a></li>
+                <li><a href="blackbox.html"> BlackBox</a></li>
+                <li><a href="linguagem.html"> linguagem de programação </a></li>
+                <li><a href="preprojeto.html"> Pre Projeto </a></li>
+                <li><a href="cripto.html"> Criptografia </a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div class="imagem">
+            <img src="blackbox.jpg" alt="black box">
+        </div>
+        <h1> BlackBox </h1>
+
+        <p>Uma "black box" é um dispositivo, sistema ou processo cujo funcionamento interno é desconhecido
+            ou inacessível aos usuários finais. Este termo é frequentemente usado em várias áreas, como aviação,
+            tecnologia, psicologia e finanças. Na aviação, refere-se a uma caixa que registra dados de voo.
+            Na tecnologia, pode ser um componente com funcionamento oculto. Em psicologia,
+            descreve processos mentais não observáveis diretamente. No desenvolvimento de software,
+            é um tipo de teste sem acesso ao código interno. Nas finanças, refere-se a algoritmos de negociação
+            proprietários.
+            Em resumo, uma "black box" representa um sistema cujo interior é opaco para quem o utiliza. </p>
+
+    </main>
+    <script>
+        /*
+            function clikMenu() {
+            itens.style.display = 'block'
+        }
+
+        ----------------------------------
+                function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        */
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

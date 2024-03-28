@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+    <title>Media Query</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html"> Hedy Lamarr </a></li>
+                <li><a href="topologia.html">Topologia </a></lia>
+                <li><a href="wifi.html">WIFI </a></li>
+                <li><a href="comutador.html"> Comutador </a></li>
+                <li><a href="blackbox.html"> BlackBox</a></li>
+                <li><a href="linguagem.html"> linguagem de programação</a></li>
+                <li><a href="preprojeto.html"> Pre Projeto </a></li>
+                <li><a href="cripto.html"> Criptografia </a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div class="imagem">
+            <img src="packet.jpg">
+        </div>
+        <h1>Pre Projeto </h1>
+
+        <p> O Pre projeto é um projeto que criamos uma rede,
+            onde conectamos os cabos da internet para conectar aos
+            computadores que são em 50 computadores e dividimos em 4 andares.
+            também colocamos internet no local para os mobile (celuares,tabletes e notebook),
+            configuramos o WIFI assim todos tem acesso a internet
+            fizemos o RIP para alinhar os IP´S. </p>
+
+    </main>
+    <script>
+        /*
+            function clikMenu() {
+            itens.style.display = 'block'
+        }
+
+        ----------------------------------
+                function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        */
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

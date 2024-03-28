@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css" />
+    <link rel="stylesheet" href="estilo-novo.css">
+    <title>Document</title>
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>teste Criptografia</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html"> Hedy Lamarr </a></li>
+                <li><a href="topologia.html">Topologia </a></li>
+                <li><a href="wifi.html"> WIFI </a></li>
+                <li><a href="comutador.html"> Comutador </a></li>
+                <li><a href="blackbox.html"> BlackBox</a></li>
+                <li><a href="linguagem.html"> linguagem de programação </a></li>
+                <li><a href="preprojeto.html"> Pre Projeto </a></li>
+                <li><a href="cripto.html"> Cripto </a></li>
+
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <section>
+            <textarea name="text" id="text"></textarea>
+        </section>
+        <button onclick="cripto()">Enviar</button>
+        <p id="result"></p>
+    </main>
+
+    <footer>
+        <address>
+            Material desenvolvido por Luis Vulcanis para o canal do Pro. Luis Vulcanis &copy; 2023
+        </address>
+    </footer>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
+    <script src="sscript.js"></script>
+</body>
+</html>

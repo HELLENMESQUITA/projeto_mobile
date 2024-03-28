@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+    <title>Media Query</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="index.html"> Hedy Lamarr </a></li>
+                <li><a href="topologia.html">Topologia </a></li>
+                <li><a href="wifi.html">WIFI </a></li>
+                <li><a href="comutador.html"> Comutador </a></li>
+                <li><a href="blackbox.html"> BlackBox</a></li>
+                <li><a href="linguagem.html"> linguagem de programação </a></li>
+                <li><a href="preprojeto.html"> Pre Projeto </a></li>
+                <li><a href="cripto.html"> Criptografia </a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div class="imagem">
+            <img src="Ldp.jpg" alt="linguagem de programação">
+        </div>
+
+        <h1> Python</h1>
+
+        <p>Python é uma linguagem de programação de alto nível, interpretada e de propósito geral.
+            Conhecida por sua sintaxe clara e legível, é amplamente utilizada em diversas áreas, como desenvolvimento
+            web,
+            ciência de dados, automação, entre outras. Suporta programação orientada a objetos, funcional e procedural.
+            Possui uma grande variedade de bibliotecas e frameworks, facilitando o desenvolvimento de aplicações.
+            Sua filosofia enfatiza a legibilidade do código e a simplicidade. Python é uma linguagem multiplataforma,
+            executável em sistemas operacionais como Windows, macOS e Linux.
+            Sua comunidade ativa e vasta documentação contribuem para sua popularidade e crescimento contínuo. </p>
+
+        <h1> CSharp </h1>
+
+        <p> C# é uma linguagem de programação moderna, orientada a objetos e de propósito geral,
+            desenvolvida pela Microsoft. Construída sobre o framework .NET,
+            oferece recursos avançados como tipagem estática, herança, polimorfismo e tratamento de exceções.
+            Amplamente utilizada para desenvolvimento de aplicativos Windows, web e móveis, além de jogos com a
+            plataforma Unity.
+            Oferece integração com outras tecnologias da Microsoft, como o Visual Studio, facilitando o desenvolvimento
+            e depuração.
+            C# é uma linguagem robusta e versátil, com uma comunidade ativa e suporte extensivo, tornando-a uma escolha
+            popular para
+            desenvolvedores em várias plataformas. </p>
+
+        <h1> JAVA Scripts </h1>
+
+        <p>JavaScript é uma linguagem de programação de alto nível, interpretada e multiplataforma,
+            amplamente utilizada para desenvolvimento web. É conhecida por sua capacidade de criar interatividade em
+            páginas da web,
+            manipular elementos HTML e estilizar páginas dinamicamente. Originalmente desenvolvida para navegadores,
+            hoje é utilizada
+            também em ambientes de servidor, graças ao Node.js. JavaScript suporta programação orientada a objetos e
+            funcional,
+            e é conhecida por sua sintaxe flexível e dinâmica. Possui uma vasta gama de bibliotecas e frameworks, como
+            React.js e
+            Angular.js, facilitando o desenvolvimento de aplicações complexas. A linguagem está em constante evolução,
+            com novos recursos e padrões sendo adicionados regularmente para atender às demandas modernas de
+            desenvolvimento web. </p>
+
+    </main>
+    <script>
+        /*
+            function clikMenu() {
+            itens.style.display = 'block'
+        }
+
+        ----------------------------------
+                function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        */
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

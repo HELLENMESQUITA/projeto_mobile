@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+    <title>Media Query</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html"> Hedy Lamarr </a></li>
+                <li><a href="topologia.html">Topologia </a></li>
+                <li><a href="wifi.html"> WIFI </a></li>
+                <li><a href="comutador.html"> Comutador </a></li>
+                <li><a href="blackbox.html"> BlackBox</a></li>
+                <li><a href="linguagem.html"> linguagem de programação </a></li> 
+                <li><a href="preprojeto.html"> Pre Projeto </a></li>
+                <li><a href="cripto.html"> Criptografia </a></li>
+
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div class="imagem"> 
+         <img src="hedylamarr.jpg" alt="hedy lamarr">
+         </div>
+        <article>
+           
+            <h1> Quem foi Hedy lamarr</h1>
+
+            <p> Hedy Lamarr foi uma atriz e inventora austríaca-americana nascida
+                em 9 de novembro de 1914 e falecida em 19 de janeiro de 2000.
+                Ela ficou conhecida por sua carreira no cinema durante a Era de Ouro de Hollywood,
+                atuando em filmes como "Algiers" (1938) e "Boom Town" (1940).
+
+                Além de sua carreira de sucesso como atriz, Hedy Lamarr também era inventora e co-desenvolveu,
+                durante a Segunda Guerra Mundial, uma tecnologia chamada "salto de frequência"
+                (frequency hopping) em parceria com o compositor George Antheil.
+                Essa tecnologia tinha o objetivo de evitar interferências nas comunicações de rádio e foi patenteada em
+                1942.
+                Embora inicialmente subutilizada durante a guerra, a invenção de Lamarr se tornou fundamental para o
+                desenvolvimento
+                posterior de tecnologias como o Bluetooth e o Wi-Fi. No entanto,
+                sua genialidade como inventora só foi reconhecida mais tarde em sua vida. Hedy Lamarr é frequentemente
+                lembrada
+                como uma figura notável tanto na indústria do entretenimento quanto na área de inovação tecnológica.
+            </p>
+    
+        </article>
+    </main>
+    <script>
+        /*
+            function clikMenu() {
+            itens.style.display = 'block'
+        }
+
+        ----------------------------------
+                function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        */
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo-mq.css">
+    <link rel="stylesheet" href="estilo-novo.css">
+    <title>Media Query</title>
+</head>
+
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site-Responsivo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clikMenu()">density_small</span>
+        <menu id="itens">
+
+            <ul>
+                <li><a href="index.html"> Hedy Lamarr </a></li>
+                <li><a href="topologia.html">Topologia </a></li>
+                <li><a href="wifi.html">WIFI </a></li>
+                <li><a href="comutador.html"> Comutador </a></li>
+                <li><a href="blackbox.html"> BlackBox</a></li>
+                <li><a href="linguagem.html">linguagem de programação </a></li>
+                <li><a href="preprojeto.html"> Pre Projeto </a></li>
+                <li><a href="cripto.html"> Criptografia </a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <div class="imagem">
+            <img src="comutador.jpg" alt="imagem do comutador">
+        </div>
+        <h1>Comutador </h1>
+
+        <p>Wi-Fi é uma tecnologia sem fio que permite a conexão de dispositivos à internet e entre si através de ondas
+            de rádio.
+            Utiliza pontos de acesso para transmitir dados e exige autenticação para segurança. Suporta diferentes
+            padrões,
+            como 802.11n, 802.11ac e 802.11ax. Sua segurança é garantida por senhas, criptografia e outras medidas.
+            O alcance pode ser afetado por obstáculos e interferências. É amplamente utilizado em residências,
+            empresas e espaços públicos para acesso à internet, compartilhamento de arquivos e streaming de mídia.
+            O Wi-Fi continua a evoluir com novas tecnologias para aumentar a velocidade, eficiência e segurança das
+            redes sem fio.</p>
+
+    </main>
+    <script>
+        /*
+            function clikMenu() {
+            itens.style.display = 'block'
+        }
+
+        ----------------------------------
+                function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        */
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clikMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>
